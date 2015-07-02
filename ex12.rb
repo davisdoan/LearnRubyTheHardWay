@@ -10,3 +10,4 @@ number = another.to_i
 
 smaller = number  / 100
 puts "A smaller number is #{smaller}."
+#test comment for git changes
