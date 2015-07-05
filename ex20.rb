@@ -3,7 +3,7 @@ input_file = ARGV.first
 def print_all(f)
 	puts f.read
 end
-#seek goes to a position for your file
+#seek goes to a position for your file in terms of bytes
 def rewind(f)
 	f.seek(0)
 end
