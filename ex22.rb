@@ -78,3 +78,13 @@ print txt.read
 txt.close
 
 # sixteenth program - reading and writing to files
+# close - closes the file
+# read - reads the contents, u can assign it to a variable
+# readline - reads just one line of a text file
+# truncate - empties the file
+# write('stuff') writes to a file
+target = open(filename, 'w')
+target.truncate
+target.write("The first line")
+target.write("The second line")
+target.close
