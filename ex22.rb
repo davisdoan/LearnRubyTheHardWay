@@ -71,13 +71,13 @@ year = $stdin.gets.chomp
 puts "You said you were born in #{year}."
 
 #fifthteenth program - reading files
-filename = text.text
+filename = ARGV.second
 txt = open(filename)
 puts "Here is your file #{filename}"
 print txt.read
 txt.close
 
-# sixteenth program - reading and writing to files
+# sixteenth/seventeenth program - reading and writing to files
 # close - closes the file
 # read - reads the contents, u can assign it to a variable
 # readline - reads just one line of a text file
@@ -88,3 +88,23 @@ target.truncate
 target.write("The first line")
 target.write("The second line")
 target.close
+
+# eighteenth, nineteenth, twentieth program  - names, variables, and functions
+def print_none()
+	puts "I got nothin"
+end
+
+def cheese_and_crackers(cheese_count, box_count)
+	puts "You have #{cheese_count} cheeses!"
+	puts "You have #{box_count} boxes of cheese"
+end
+
+print_none()
+cheese_and_crackers(10, 4)
+
+# twenty first program - function returns
+def multiply(a, b)
+	return a * b
+end
+multiplication = multiply(3, 10)
+puts "The result of your calculation is #{multiplication}"
