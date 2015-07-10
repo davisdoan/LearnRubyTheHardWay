@@ -102,7 +102,7 @@ end
 print_none()
 cheese_and_crackers(10, 4)
 
-# twenty first program - function returns
+# twenty first program - function return
 def multiply(a, b)
 	return a * b
 end
